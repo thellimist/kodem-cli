@@ -1,0 +1,46 @@
+{
+  "name": "kodem-cli",
+  "version": "1.0.0",
+  "description": "Kodem CLI for deployment",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "bin": {
+    "@thellimist/kodem-cli": "bin/kodem-cli",
+    "kodem-cli": "bin/kodem-cli"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thellimist/kodem-cli.git"
+  },
+  "keywords": [
+    "cli",
+    "kodem-cli",
+    "kodem"
+  ],
+  "author": "Kodem Ltd",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/thellimist/kodem-cli/issues"
+  },
+  "homepage": "https://github.com/thellimist/kodem-cli#readme",
+  "dependencies": {
+    "arg": "4.1.1",
+    "chalk": "2.4.2",
+    "clui": "0.3.6",
+    "configstore": "5.0.0",
+    "esm": "3.2.25",
+    "figlet": "1.2.4",
+    "inquirer": "7.0.0",
+    "node-minizip": "0.3.0",
+    "request": "2.88.0"
+  },
+  "files": [
+    "bin/",
+    "src/"
+  ]
+}
