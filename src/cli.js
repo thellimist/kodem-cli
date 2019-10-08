@@ -69,20 +69,6 @@ async function sendZip(email) {
 
 }
 
-function parseArgumentsIntoOptions(rawArgs) {
- const args = arg(
-   {
-     'up': 'up',
-   },
-   {
-     argv: rawArgs.slice(2),
-   }
- );
- return {
-   up: args['up'] || false,
- };
-}
-
 async function askEmail() {
   const questions = [
     {
