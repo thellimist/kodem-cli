@@ -135,8 +135,24 @@ async function getEmail() {
   return options.email
 }
 
+function isPackageJsonExists() {
+  try {
+    var packageData = require(process.cwd() + '/package.json');
+    return true
+  } catch (e) {
+    // There was no package.json
+    return false;
+  }
+}
+
 export async function cli(args) {
   init()
+
+  if (!isPackageJsonExists()) {
+    console.log(chalk.red('File package.json does not exist in the current file path.\nMake sure you are in the correct file path.'));
+    return
+  }
+
   let answer = await askDeploy()
   if (!answer.deploy) {
     return
