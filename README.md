@@ -1,14 +1,13 @@
 # kodem-cli
-
-`npm install kodem-cli -g`
+The fastest way to deploy a nodejs app. No configs required.
 
 ## Usage
 
-Go to the project you want to upload. Run `kodem-cli`. That's it.
+1. `cd` into your app's directory
+2. Run `kodem-cli go` 
 
-## Development
+Your app is live! 
 
-`npm install`
-`npm link`
+## Install
 
-Then start contributing.
+`npm install kodem-cli -g`
