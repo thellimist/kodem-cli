@@ -9,6 +9,8 @@ import request from 'request';
 import path from 'path';
 import fs from 'fs';
 import Minizip from 'node-minizip';
+import zipper from "zip-local";
+import mv from 'mv';
 
 // TODO: zip it to somewhere else rather than the same directory
 
@@ -26,12 +28,19 @@ const init = () => {
   );
 }
 
-function zip() {
-  Minizip.zip('.', zipFileName, function(err) {
-    if (err) {
-      console.log(err);
-    }
-  });
+async function zip() {
+  // Move node_modules
+  if (fs.existsSync('node_modules/')) {
+    await mv('node_modules/', '../kodem_temp_node_modules', function(err) {
+    });
+  }
+  zipper.sync.zip(".").compress().save(zipFileName);
+
+  // Move it back
+  if (fs.existsSync('../custom_node_modules')) {
+    await mv('../kodem_temp_node_modules', './node_modules', function(err) {
+    });
+  }
 }
 
 function sleep(ms) {
@@ -146,7 +155,7 @@ export async function cli(args) {
 
   let email = await getEmail()
 
-  zip()
+  await zip()
   sendZip(email)
 }
 

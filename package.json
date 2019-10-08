@@ -36,8 +36,10 @@
     "esm": "3.2.25",
     "figlet": "1.2.4",
     "inquirer": "7.0.0",
+    "mv": "2.1.1",
     "node-minizip": "0.3.0",
-    "request": "2.88.0"
+    "request": "2.88.0",
+    "zip-local": "0.3.4"
   },
   "files": [
     "bin/",
