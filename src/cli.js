@@ -131,13 +131,11 @@ async function getEmail() {
 }
 
 function isPackageJsonExists() {
-  try {
-    var packageData = require(process.cwd() + '/package.json');
+  if (fs.existsSync('package.json')) {
     return true
-  } catch (e) {
-    // There was no package.json
-    return false;
   }
+
+  return false
 }
 
 export async function cli(args) {
