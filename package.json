@@ -1,6 +1,6 @@
 {
   "name": "kodem-cli",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Kodem CLI for deployment",
   "main": "src/index.js",
   "scripts": {
