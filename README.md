@@ -21,7 +21,15 @@ Your app is live!
 
 ### Environement Variables
 
-All you need is `.env` file inside your directory. Kodem will take care of the rest.
+All you need is `.env` file inside your directory. Kodem will take care of the rest. 
+
+Envrionment variables in `.env` file should look like the following
+
+```
+DB_HOST=localhost
+DB_USER=root
+DB_PASS=s1mpl3
+```
 
 ## Requirments
 Nodejs v8+
