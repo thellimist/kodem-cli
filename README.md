@@ -1,7 +1,7 @@
 # kodem-cli
 The fastest way to deploy a nodejs app. No configs required.
 
-![](https://media.giphy.com/media/WoKNTa63QBFkeHD186/giphy.gif)
+![](https://media.giphy.com/media/YOMCEDv89zqUkkNqsQ/giphy.gif)
 
 ## Install
 
