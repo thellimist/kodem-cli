@@ -21,7 +21,7 @@ Your app is live!
 
 ### Environement Variables
 
-All you is `.env` file inside your directory. Kodem will take care of the rest.
+All you need is `.env` file inside your directory. Kodem will take care of the rest.
 
 ## Requirments
 Nodejs v8+
