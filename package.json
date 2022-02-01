@@ -39,7 +39,7 @@
     "mv": "2.1.1",
     "node-minizip": "0.3.0",
     "request": "2.88.0",
-    "zip-local": "0.3.4"
+    "zip-local": "0.3.5"
   },
   "files": [
     "bin/",
